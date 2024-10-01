@@ -1,0 +1,29 @@
+@media (max-width:1120px){
+   .menu{
+
+
+    &__list-item{
+        display: none;
+    }
+
+    &__line{
+        display: none;
+    }
+
+    &__line-2{
+       display:block;
+        margin: 0 21px 0 21px;
+    }
+
+
+   }
+
+   #overlay-button{
+    display: block;
+   }
+
+
+   #overlay{
+    width: 60%;
+   }
+}

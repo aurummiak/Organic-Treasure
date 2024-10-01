@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap');
+  </style>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="menu__logo">
+            <a href="#" class="logo">
+              <img src="images/logo.png" alt="" class="menu__logo-image">
+            </a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a href="#catalogue" class="menu__list-link">Каталог</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#about" class="menu__list-link">О нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#comments" class="menu__list-link">Отзывы</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#contacts" class="menu__list-link">Контакты</a>
+              </li>
+              <img src="images/line.svg" alt="" class="menu__line">
+              <li class="menu__list-item-1">
+                <img src="images/header__cart.svg" alt="" class="menu__cart-img">
+              </li>
+              <img src="images/line.svg" alt="" class="menu__line-2">
+
+
+
+
+              <input type="checkbox" id="overlay-input" />
+              <label for="overlay-input" id="overlay-button"><span></span></label>
+              <div id="overlay">
+                <ul>
+                  <li><a href="#">Каталог</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+
+
+
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="top">
+
+        <div class="top__inner">
+          <div class="container">
+            <div class="top__item">
+
+              <div class="top__item-info">
+                <h2 class="top__item-title">
+                  ORGANIC<br>TREASURE
+                </h2>
+
+                <p class="top__item-text">
+                  "Только натуральные компоненты"
+                </p>
+                <img src="images/decor.png" alt="" class="top__decor">
+                <p class="top__item-text">
+                  Оформите подписку, чтобы быть<br> всегда в курсе
+                  акций и скидок!
+                </p>
+                <button class="top__btn"><a href="#sub" class="top__btn-link">Подписаться</a></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about__title">О нас</h2>
+          <div class="about__inner">
+            <div class="about__item">
+              <img src="images/about__img1.png" alt="" class="about__img">
+              <div class="about__info">
+                <div class="about__block-info">
+                  <img src="images/arrow.svg" alt="" class="about__arrow">
+                  Наши товары созданы исключительно
+                  из натуральных компонентов!
+                </div>
+                <img src="images/decor.png" alt="" class="about__decor">
+                <div class="about__block-info">
+                  <img src="images/arrow.svg" alt="" class="about__arrow">
+                  Ароматизированные свечи - лучший подарок для изысканной натуры!
+                </div>
+                <img src="images/decor.png" alt="" class="about__decor">
+                <div class="about__block-info">
+                  <img src="images/arrow.svg" alt="" class="about__arrow">
+                  Создаем ароматизированные свечи с 2005 года, обладатели сотен счастливых клиентов!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="catalogue">
+        <div class="container">
+          <h3 class="catalogue__title" id="catalogue">
+            Каталог
+          </h3>
+          <div class="collection">
+            <div class="collection__item">
+              <div class="collection__block-img">
+                <img src="images/cat1.png" alt="" class="collection__images">
+              </div>
+
+              <h3 class="collection__title">ACADIA NATIONAL<br>PARK</h3>
+              <p class="collection__text">клевер, мадагаскарская<br>ваниль, мускус, сандал</p>
+              <div class="collection__button">
+                <button type="button" class="btn btn-lg btn-primary js-modal" data-modal="#modal_1">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="collection__item">
+
+              <div class="collection__block-img">
+                <img src="images/cat2.png" alt="" class="collection__images">
+              </div>
+
+              <h3 class="collection__title">GREECE<br>FRAGRANCE</h3>
+              <p class="collection__text">кокос, манго, апельсин,<br> мелисса, ваниль</p>
+              <div class="collection__button">
+                <button type="button" class="btn btn-lg btn-primary js-modal" data-modal="#modal_2">КУПИТЬ</button>
+              </div>
+            </div>
+            <div class="collection__item">
+
+              <div class="collection__block-img">
+                <img src="images/cat3.png" alt="" class="collection__images">
+              </div>
+
+              <h3 class="collection__title">SNOW SIBERIAN<br>MINT</h3>
+              <p class="collection__text">мята, огурец, шалфей,<br>
+                эквалипт, кедр</p>
+              <div class="collection__button">
+                <button type="button" class="btn btn-lg btn-primary js-modal" data-modal="#modal_3">КУПИТЬ</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="comments">
+        <div class="container">
+          <h3 class="comments__title" id="comments">
+            Отзывы
+          </h3>
+          <div class="user">
+            <div class="user__item">
+              <div class="user__block-img">
+                <img src="images/user1.png" alt="" class="user__images">
+              </div>
+
+              <h3 class="user__title">Шестакова Адель</h3>
+              <img src="images/decor.png" alt="" class="user__decor">
+
+              <div class="user__info">
+                <div class="user__info-text">
+                  <p class="user__text">“Уже несколько раз заказываю здесь свечи, очень приятный и интересный подарок!”
+                  </p>
+                </div>
+
+                <p class="user__date"><br>21.10.2022</p>
+              </div>
+
+
+            </div>
+            <div class="user__item">
+
+              <div class="user__block-img">
+                <img src="images/user2.png" alt="" class="user__images">
+              </div>
+
+              <h3 class="user__title">Жукова Мария</h3>
+              <img src="images/decor.png" alt="" class="user__decor">
+
+              <div class="user__info">
+                <div class="user__info-text">
+                  <p class="user__text">“Недавно услышала о магазине, но уже заказала много свечей!”</p>
+                </div>
+
+                <p class="user__date"><br>21.10.2022</p>
+              </div>
+
+
+            </div>
+            <div class="user__item">
+
+              <div class="user__block-img">
+                <img src="images/user3.png" alt="" class="user__images">
+              </div>
+
+              <h3 class="user__title">Степанова Полина</h3>
+              <img src="images/decor.png" alt="" class="user__decor">
+
+              <div class="user__info">
+                <div class="user__info-text">
+                  <p class="user__text">“Замечательные ароматизированные свечи! Цена соответствует качеству!”</p>
+                </div>
+
+                <p class="user__date"><br>21.10.2022</p>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="contacts" id="contacts">
+
+        <div class="contacts__inner">
+          <div class="container">
+            <div class="contacts__item">
+
+              <div class="contacts__item-info">
+                <h2 class="contacts__item-title">
+                  Контакты
+                </h2>
+                <div class="contacts__grid-info">
+
+                  <div class="contacts__grid-item-1">
+                    <h4 class="contacts__grid-title">Телефон:</h4>
+                    <p class="contacts__grid-text">
+                      + 375 (29) 843 14 23<br>
+                      + 375 (25) 100 29 94<br>
+                      + 375 (29) 425 12 76<br>
+                    </p>
+                  </div>
+
+                  <div class="contacts__grid-item-2">
+                    <h4 class="contacts__grid-title">Режим работы службы доставки:</h4>
+                    <p class="contacts__grid-text">
+                      пн-пт: 09:00 - 18:00<br>
+                      сб-вс: 10:00 - 15:00<br>
+                      Праздничные дни: 10:00 - 13:00<br>
+                    </p>
+                  </div>
+
+                  <div class="contacts__grid-item-3">
+                    <h4 class="contacts__grid-title">Электронная почта:</h4>
+                    <p class="contacts__grid-text">
+                      organictreasureshop@gmail.com (почта для заказов)<br>
+                      organictrinfo@gmail.com (жалобы и предложения)<br>
+                      orgtrshopdirector@gmail.com (написать руководителю)<br>
+                    </p>
+                  </div>
+
+                  <div class="contacts__grid-item-4">
+                    <h4 class="contacts__grid-title">Юридическая информация:</h4>
+                    <p class="contacts__grid-text">
+                      ООО “ОРГАНИКТРЭЖЭР”, ОГРН: 12841947204<br>
+                      Юр. адрес: 123452, г. Минск, ул. Гикало, д. 9<br>
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="mail">
+        <div class="container">
+          <h2 class="mail__title" id="sub">Подписаться</h2>
+          <div class="mail__inner">
+            <div class="mail__item">
+              <img src="images/mailing.png" alt="" class="mail__img">
+              <div class="mail__info">
+                <div class="mail__block-info">
+                  <p>
+                    Не пропустите акции и сезонные скидки в нашем магазине!
+                  </p>
+                </div>
+                <img src="images/decor.png" alt="" class="mail__decor">
+                <div class="mail__form">
+                  <input type="email" class="mail__input-form" placeholder="Ваше имя" maxlength="38"><br>
+                  <input type="email" class="mail__input-form" placeholder="Email" maxlength="38"><br>
+
+                  <button class="mail__btn" type="Submit">
+
+                    <a href="javascript:PopUpShow2()">Отправить</a>
+
+                  </button>
+                  <p class="mail__hide" id="popup2">Вы подписаны!</p><br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
+      <div id="popup1" class="modal-window-2">
+        <div class="modal-window-2__inner">
+          <div class="modal-window-2__text">
+            <h2>Оплачено</h2>
+            <p>
+              Оплата была произведена успешно, мы оповестим вас, когда продукт будет готов. Спасибо, что выбираете нас!
+            </p>
+          </div>
+          <a href="javascript:PopUpHide()" class="modal-close-2">X</a>
+        </div>
+      </div>
+
+
+
+
+      <div id="modal_1" class="modal-window">
+        <div class="modal-window__inner">
+
+          <div class="modal-window__photo">
+            <img src="images/modal-1.png" alt="" class="modal-window__image" />
+          </div>
+
+
+          <div class="modal-window__text">
+            <div>
+              <h1>ACADIA NATIONAL PARK</h1>
+              <div class="modal-window__text-cont">
+                <img src="images/decor.png" alt="">
+                <p>
+                  <b>Добавки: </b>клевер, мадагаскарская ваниль, мускус, сандал<br>
+                  <b>Доставка: </b>2-3 дня<br>
+                  <b>Цена: </b> 35 BYN
+                </p>
+                <img src="images/decor.png" alt="">
+              </div>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h2>Окно заказа</h2>
+              </div>
+              <div class="modal-window__form">
+                <input type="text" class="modal-window__form-input" placeholder="Ваше имя" maxlength="30" />
+                <input type="text" class="modal-window__form-input" placeholder="Номер карты" />
+                <input type="tel" class="modal-window__form-input" placeholder="Номер телефона" maxlength="13" />
+
+
+                <input type="text" class="modal-window__form-input-2" placeholder="CVV" maxlength="3" />
+
+                <button class="modal-window__btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="modal-close">X</a>
+        </div>
+      </div>
+
+      <div id="modal_2" class="modal-window">
+        <div class="modal-window__inner">
+
+          <div class="modal-window__photo">
+            <img src="images/modal-2.png" alt="" class="modal-window__image" />
+          </div>
+
+
+          <div class="modal-window__text">
+            <div>
+              <h1>GREECE FRAGRANCE</h1>
+              <div class="modal-window__text-cont">
+              <img src="images/decor.png" alt="">
+              <p>
+                <b>Добавки: </b>кокос, манго, апельсин, мелисса, ваниль<br>
+                <b>Доставка: </b>2-3 дня<br>
+                <b>Цена: </b> 40 BYN
+              </p>
+              <img src="images/decor.png" alt="">
+              </div>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h2>Окно заказа</h2>
+              </div>
+              <div class="modal-window__form">
+                <input type="text" class="modal-window__form-input" placeholder="Ваше имя" maxlength="30" />
+
+                <input type="text" class="modal-window__form-input" placeholder="Номер карты" />
+                <input type="tel" class="modal-window__form-input" placeholder="Номер телефона" maxlength="13" />
+
+
+                <input type="text" class="modal-window__form-input-2" placeholder="CVV" maxlength="3" />
+
+                <button class="modal-window__btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="modal-close">X</a>
+        </div>
+      </div>
+
+      <div id="modal_3" class="modal-window">
+        <div class="modal-window__inner">
+
+          <div class="modal-window__photo">
+            <img src="images/modal-3.png" alt="" class="modal-window__image" />
+          </div>
+
+
+          <div class="modal-window__text">
+            <div>
+              <h2>SNOW SIBERIAN MINT</h2>
+              <div class="modal-window__text-cont">
+              <img src="images/decor.png" alt="">
+              <p>
+                <b>Добавки: </b>мята, огурец, шалфей, эквалипт, кедр<br>
+                <b>Доставка: </b>3-5 дня<br>
+                <b>Цена: </b> 45 BYN
+              </p>
+              <img src="images/decor.png" alt="">
+              </div>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h1>Окно заказа</h1>
+              </div>
+              <div class="modal-window__form">
+                <input type="text" class="modal-window__form-input" placeholder="Ваше имя" maxlength="30" />
+                <input type="text" class="modal-window__form-input" placeholder="Номер карты" />
+                <input type="tel" class="modal-window__form-input" placeholder="Номер телефона" maxlength="13" />
+
+
+                <input type="text" class="modal-window__form-input-2" placeholder="CVV" maxlength="3" />
+
+                <button class="modal-window__btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="modal-close">X</a>
+        </div>
+      </div>
+
+
+
+      <span class="up">UP</span>
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__logo-img">
+              <img src="images/logo.png" alt="">
+            </div>
+            <nav class="footer__navbar">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#comments" class="footer__social-link">Отзывы</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#catalogue" class="footer__social-link">Каталог</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#about" class="footer__social-link">О нас</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#contacts" class="footer__social-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="" class="footer_social-icon">
+                  <img src="images/facebook__icon.svg" alt="" class="footer__icon">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="" class="footer_social-icon">
+                  <img src="images/twitter__icon.svg" alt="" class="footer__icon">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="" class="footer_social-icon">
+                  <img src="images/instagram__icon.svg" alt="" class="footer__icon">
+                </a>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+  <script>
+    $(document).ready(function () {
+      //Скрыть PopUp при загрузке страницы
+      PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow() {
+      $("body").css("overflow", "hidden");
+      $("#popup1").show();
+    }
+
+
+    function PopUpShow2() {
+
+      $("#popup2").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide() {
+      $("#popup1").hide();
+      $("body").css("overflow", "auto");
+    }
+
+
+
+
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
